@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formular</title>
+</head>
+<br>
+<br>
+<header>WIN AG</header>
+<br>
+<br>
+<article>
+    <h1>Registrieren</h1>
+    <form action="index.html" method="GET">
+        <p>
+            <label for="vorname" id="L_vorname" class="beschriftungsfeld">Vorname</label> <br>
+            <input id="vorname" type="text" required class="eingabefeld">
+        </p>
+        <p>
+            <label for="nachname" id="L_nachname" class="beschriftungsfeld">Nachname</label> <br>
+            <input id="nachname" type="text" required class="eingabefeld">
+        </p>
+        <p>
+            <label for="mail" id="L_mail" class="beschriftungsfeld">E-Mail</label> <br>
+            <input id="mail" type="email" required class="eingabefeld">
+        </p>
+        <p> <label for="passwort" id="L_passwort" class="beschriftungsfeld">Passwort</label> <br>
+            <input id="passwort" type="password" required class="eingabefeld">
+        </p>
+        <p>
+            <label for="passwortWiederholen" id="L_passwortWiederholen" class="beschriftungsfeld">Passwort wiederholen</label> <br>
+            <input id="passwortWiederholen" type="password" required class="eingabefeld">
+        </p>
+        <p>
+            <label for="telefon" id="L_telefon" class="beschriftungsfeld">Telefonnummer</label> <br>
+            <input id="telefon" type="number" required class="eingabefeld">
+        </p>
+        <p>
+            <label for="geburtsdatum" id="L_geburtsdatum" class="beschriftungsfeld">Geburtsdatum</label> <br>
+            <input id="geburtsdatum" type="date" required class="eingabefeld">
+        </p>
+        <p>
+            <label for="auswahl" id="sicherheitsfrage" class="beschriftungsfeld">Sicherheitsfrage</label><br>
+            <select name="auswahl" id="auswahl" class="eingabefeld">
+                <option value="p1">Welches Betriebssystem hat Ihr Smartphone?</option>
+                <option value="p2">Wie heißt Ihre Mutter?</option>
+                <option value="p3">Wie heißt Ihr Vater?</option>
+                <option value="p4">Wie heißt Ihr WIN-Lehrer?</option>
+                <option value="p5">Wie heißt Ihr Englisch-Lehrer?</option>
+                <option value="p6">Welche Partei präferieren Sie?</option>
+                <option value="p7">Beschreiben Sie die AfD mit einem Wort!</option>
+                <option value="p8">Mögen Sie Wasserski?</option>
+            </select>
+        </p>
+        <p>
+            <label for="textbereich" id="L_antwortAufSicherheitsfrage" class="beschriftungsfeld">Antwort</label><br>
+            <input type="text" name="antwortAufFrage" id="textbereich" class="eingabefeld" required> <br>
+        </p>
+        <p>
+            <label for="zahlungsmethoden" id="L_kreditkartenorganisation" class="beschriftungsfeld">Kreditkartenorganisation</label>
+            <fieldset id="Zahlungsmethoden" class="eingabefeld">
+                <input type="radio" id="v" name="Zahlmethode" value="Visa" required><label for="v" class="beschriftungsfeld" id="beschriftungsfeldZahlung1">  Visa</label>
+                <input type="radio" id="m" name="Zahlmethode" value="Mastercard" required><label for="m" class="beschriftungsfeld" id="beschriftungsfeldZahlung2">  Mastercard</label>
+                <input type="radio" id="a" name="Zahlmethode" value="American Express" required><label for="a" class="beschriftungsfeld" id="beschriftungsfeldZahlung3">  Russian Express</label>
+            </fieldset>
+        </p>
+        <p><label for="kreditkartennummer" id="L_kreditkartennummer" class="beschriftungsfeld">Kreditkartennummer</label><br>
+            <input type="number" id="kreditkartennummer" required class="eingabefeld"></p>
+        <p>
+            <input type="checkbox" name="agb" value="gelesenZugestimmt" id="agbUeberpruefung" required><label for="agbUeberpruefung" id="L_agbUeberpruefung">  Ich habe die AGB und die Datenschutzbestimmungen gelesen und stimme zu.</label>
+        </p>
+        <p>
+            <button type="reset" class="buttons">Zurücksetzen</button>
+            <button type="submit" class="buttons">Senden</button>
+        </p>
+    </form>
+
+    <br>
+</article>
+
+</html>

@@ -1,0 +1,148 @@
+body {
+    background-color: #111;
+}
+
+header {
+    font-family: monospace;
+    color: limegreen;
+    text-align: center;
+    font-size: 3em;
+}
+
+article {
+    background-color: #333;
+    margin: auto;
+    padding: 2%;
+    color: white;
+    width: 50%;
+}
+
+h1 {
+    color: white;
+    font-family: sans-serif;
+}
+
+input,
+#textbereich {
+    background-color: #ccc;
+}
+
+select {
+    background-color: #ccc;
+}
+
+#Zahlungsmethoden,
+#L_agbUeberpruefung {
+    font-family: sans-serif;
+}
+
+#L_vorname,
+#L_nachname,
+#L_mail,
+#L_passwort,
+#L_passwortWiederholen,
+#L_telefon,
+#L_geburtsdatum,
+#sicherheitsfrage,
+#L_antwortAufSicherheitsfrage,
+#L_kreditkartennummer,
+#L_kreditkartenorganisation,
+#L_agbUeberpruefung {
+    font-family: sans-serif;
+}
+
+.beschriftungsfeld {
+    color: #ccc;
+    font-size: 0.9em;
+    font-family: monospace;
+    letter-spacing: .2em;
+}
+
+.eingabefeld {
+    text-indent: 0.4em;
+    border: none;
+    border-radius: 0.25em;
+    margin-left: 1.25em;
+    outline: none;
+}
+
+.buttons {
+    background: limegreen;
+    outline: none;
+    border: none;
+    color: black;
+    padding: 1em;
+    font-weight: 1000;
+    cursor: pointer;
+}
+
+/*
+.eingabefeld:focus{
+    box-shadow: 0px 0px 5px 2px limegreen; 
+    outline: none;
+}
+
+.eingabefeld:not(#Zahlungsmethoden, #auswahl):valid {
+    box-shadow: 0px 0px 5px 2px limegreen; 
+}
+
+#agbUeberpruefung:valid {
+    box-shadow: 0px 0px 5px 2px limegreen; 
+}
+
+.eingabefeld:invalid {
+    box-shadow: 0px 0px 5px 2px red; 
+}
+
+#agbUeberpruefung:invalid {
+    box-shadow: 0px 0px 5px 2px red; 
+}
+*/
+
+input:valid {
+    box-shadow: 0px 0px 5px 2px limegreen; 
+}
+
+input:invalid {
+    box-shadow: 0px 0px 5px 2px red; 
+}
+
+#beschriftungsfeldZahlung1,
+#beschriftungsfeldZahlung2,
+#beschriftungsfeldZahlung3 {
+    font-size: 0.9em;
+}
+
+#L_agbUeberpruefung {
+    font-family: monospace;
+}
+
+iframe {
+    animation-name: beispiel;
+    animation-duration: 0.8s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes beispiel {
+    0%, 100% {
+        box-shadow: 0px 0px 5px 5px limegreen; 
+    }
+    20% {
+        box-shadow: 0px 0px 5px 5px red; 
+    }
+    40% {
+        box-shadow: 0px 0px 5px 5px blue; 
+    }
+    60% {
+        box-shadow: 0px 0px 5px 5px orangered; 
+    }
+    80% {
+        box-shadow: 0px 0px 5px 5px yellow; 
+    }
+}
+
+a{
+    height: 100%;
+    width: 100%;
+}
+
